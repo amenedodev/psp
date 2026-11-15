@@ -1,0 +1,8 @@
+remote_theme: just-the-docs/just-the-docs
+title: Programación de servicios y procesos
+description: Apuntes de Programación de servicios y procesos del CS DAM
+url: https://amenedodev.github.io
+baseurl: "/psp"   # borra esta línea si el repo es tuusuario.github.io
+
+search_enabled: true
+color_scheme: light
