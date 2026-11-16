@@ -1,9 +1,9 @@
 ---
-title: Concurrencia
+title: Programación concurrente
 nav_order: 10
 has_children: true
 ---
 
-# Concurrencia
+# Programación concurrente
 
 Introducción al bloque.
