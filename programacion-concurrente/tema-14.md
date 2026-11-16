@@ -1,6 +1,6 @@
 ---
 title: Tema 14. Grupos de hilos (ThreadGroup)
-parent: Concurrencia
+parent: Programacion concurrente
 nav_order: 140
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Tema 2. Procesadores y núcleos
-parent: Concurrencia
+parent: Programacion concurrente
 nav_order: 20
 ---
 

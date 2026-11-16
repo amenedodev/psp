@@ -1,6 +1,6 @@
 ---
 title: Tema 11. Coordinación / Señalización
-parent: Concurrencia
+parent: Programacion concurrente
 nav_order: 110
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Tema 1. Introducción.
-parent: Concurrencia
+parent: Programacion concurrente
 nav_order: 10
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Hilos demonio (daemon)
-parent: Concurrencia
+parent: Programacion concurrente
 nav_order: 130
 ---
 

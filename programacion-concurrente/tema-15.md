@@ -1,6 +1,6 @@
 ---
 title: Tema 15. Librería de concurrencia de alto nivel
-parent: Concurrencia
+parent: Programacion concurrente
 nav_order: 150
 ---
 

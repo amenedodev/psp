@@ -1,6 +1,6 @@
 ---
 title: Tema 7. Esperando el final de un hilo
-parent: Concurrencia
+parent: Programacion concurrente
 nav_order: 70
 ---
 

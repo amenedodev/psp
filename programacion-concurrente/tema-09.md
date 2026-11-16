@@ -1,6 +1,6 @@
 ---
 title: Tema 9. Métodos básicos
-parent: Concurrencia
+parent: Programacion concurrente
 nav_order: 90
 ---
 

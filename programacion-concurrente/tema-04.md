@@ -1,6 +1,6 @@
 ---
 title: Tema 4. Hilos - Introducción
-parent: Concurrencia
+parent: Programacion concurrente
 nav_order: 40
 ---
 

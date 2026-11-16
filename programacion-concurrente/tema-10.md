@@ -1,6 +1,6 @@
 ---
 title: Tema 10. Sincronización
-parent: Concurrencia
+parent: Programacion concurrente
 nav_order: 100
 ---
 

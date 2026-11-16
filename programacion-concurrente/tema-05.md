@@ -1,6 +1,6 @@
 ---
 title: Tema 5. Hilos - Creación y  muerte
-parent: Concurrencia
+parent: Programacion concurrente
 nav_order: 50
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Tema 3. Programación concurrente
-parent: Concurrencia
+parent: Programacion concurrente
 nav_order: 30
 ---
 

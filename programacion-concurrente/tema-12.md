@@ -1,6 +1,6 @@
 ---
 title: Tema 12. Interrumpir a un hilo
-parent: Concurrencia
+parent: Programacion concurrente
 nav_order: 120
 ---
 

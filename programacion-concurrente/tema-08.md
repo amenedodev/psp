@@ -1,6 +1,6 @@
 ---
 title: Tema 8. Prioridades
-parent: Concurrencia
+parent: Programacion concurrente
 nav_order: 80
 ---
 
