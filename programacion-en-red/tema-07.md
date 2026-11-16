@@ -41,7 +41,6 @@ De la ruta especificada en la URL (endpoint) obtenemos el recurso sobre el que a
 | PUT    | Update  | Reemplazar completamente un recurso | `/usuarios/{id}`|
 | PATCH  | Update  | Actualizar parcialmente un recurso | `/usuarios/{id}` |
 | DELETE | Delete  | Eliminar un recurso | `/usuarios/{id}` |
-|
 
 
 Si con el verbo y la URI no es suficiente para realizar la operación, puesto que hay que hacer una inserción o actualización (caso de POST/PUT/PATCH), entonces debemos acceder a los datos que vienen en el cuerpo de la petición. Dichos datos pueden venir en alguno de los siguientes formatos:
@@ -53,7 +52,6 @@ Si con el verbo y la URI no es suficiente para realizar la operación, puesto qu
 | XML    | Usado en otros APIs (p.e. SOAP)  | `Content-Type: application/xml` | `<usuario><nombre>Pepe</nombre> <edad>54</edad> </usuario>` |
 | Multipart Form Data  | Usado para enviar archivos | `Content-Type: multipart/form-data` |
 | Otros | YAML, CSV, TXT, etc.  | `Content-Type: text/plain` `Content-Type: text/csv`, etc. | Datos con separadores, sin estructura, etc. |
-|
 
 
 ### Códigos de respuesta y contenido opcional
@@ -84,7 +82,6 @@ Algunos de los más utilizados en las respuestas REST son los siguientes:
 | 429 | Too Many Requests         | Usuario ha superado el número límite de peticiones          |
 | 500 | Internal Server Error     | Error en el servidor                              |
 | 503 | Service Unavailable       | Servidor temporalmente fuera de servicio                    |
-|
 
 Además del código de respuesta, el servicio podrá devolver contenido al cliente si tiene sentido dependiendo de la petición (los recursos pedidos (GET), el código del recurso insertado (POST), etc.) y suelen estar codificados en formato JSON, aunque de nuevo se podrían utilizar otros formatos estructurados similares como YAML o XML.  
 
@@ -95,7 +92,6 @@ Resumiendo, la información intercambiada entre el cliente y el servidor en un A
 | Petición del cliente (Request) | Respuesta del servidor (Response) |
 |-|-|
 | •  Método HTTP (GET,POST,PUT,PATCH,DELETE)<br> •  URI del recurso<br> • Cabeceras (opcionales)<br> •  Cuerpo (con POST,PUT,PATCH)  | •  Código de estado<br> •  Cabeceras (opcionales)<br> •  Cuerpo (con GET, POST)  |
-|
 
 ### Cabeceras HTTP más utilizadas
 
@@ -109,7 +105,7 @@ Resumiendo, la información intercambiada entre el cliente y el servidor en un A
     | Respuesta | **Content-Type**: application/json | Indica el formato en el que se devuelven los datos en el cuerpo (GET/POST) |
     | Respuesta | **Last-Modified**: Wed, 21 Feb 2026 10:00:00 GMT | Indica la fecha de última modificación del contenido generado |
     | Respuesta | **Content-Length**: 348 | Indica el tamaño en bytes del contenido generado |
-    |
+
   
 - Autorización
 
@@ -119,7 +115,7 @@ Resumiendo, la información intercambiada entre el cliente y el servidor en un A
     | Respuesta | **WWW-Authenticate**: Bearer realm="api" | La envía el servidor junto con un 401 para indicar cómo autentificarse para acceder al recurso  (Bearer token) . El token se envía en el cuerpo de la respuesta. |
     | Petición | **Authorization**: Basic base64(usuario:password)  | Indica codificadas (no cifradas) las credenciales para autentificarse (sobre HTTPS) |
     | Petición | **Authorization**: Bearer token | Indica el token obtenido anteriormente por el servidor, para autentificarse |
-    |
+
 
     Existen muchos sistemas de autentificación y tipos de token (Basic, Bearer, Digest, OAuth2, JWT, ... )
 
@@ -314,7 +310,6 @@ Y combinando parámetros podemos conseguir:
 |**Seguridad**|No (sí con HTTPS / SSL)|Sí|
 |**Cacheable**|Sí|No|
 |**Usos**|APIs públicas, redes sociales, móviles|Apps empresariales, pasarelas de pago, telecomunicaciones|
-|
 
 
 ### Implementación PHP de un enrutador API REST
@@ -718,6 +713,7 @@ A continuación programaremos, utilizando la librería java.net.http (Java 11+),
 - curl -X POST localhost/clientes/index.php/clientes
      -H "Content-Type:application/json"
      -d "{\"nombre\":\"Ignacio\",\"apellidos\":\"L\",\"nif\":\"12345678Z\",\"codProvincia\":4}"
+
 
 
 ### Probar desde el navegador
