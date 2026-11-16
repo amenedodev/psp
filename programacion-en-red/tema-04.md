@@ -1,9 +1,16 @@
 ---
-title: Tema 4. Protocolo IP (red)
+title: Tema 4. Protocolos UDP (transporte)
 parent: Programación en red
 nav_order: 20
 ---
 
-# Tema 4. Protocolo IP (red)
+# Tema 4. Protocolo UDP (transporte)
 
-Contenido...
+
+**UDP** (*User Datagram Protocol*, definido en el [RFC 768](https://www.rfc-editor.org/rfc/rfc768)) trabaja a nivel de transporte y proporciona un servicio de datagramas **sin conexión** y **no confiable**.
+
+Es un protocolo rápido y ligero, por lo que se utiliza en aplicaciones donde prima la velocidad y no es tan importante la integridad absoluta de los datos (que llegue mal algún paquete o incluso que no llegue), por ejemplo en la transmisión de audio y vídeo, o en ciertos protocolos de monitorización, depuración o prueba de la red.
+
+Protocolos como DNS, RIP (*Routing Information Protocol*) o SNMP (*Simple Network Management Protocol*, que envía mensajes a intervalos regulares) lo utilizan por su rapidez y para no sobrecargar la red con conexiones costosas.
+
+Admite la comunicación punto a punto y de un punto a muchos.

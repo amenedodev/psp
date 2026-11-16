@@ -1,9 +1,26 @@
 ---
-title: Tema 3. Protocolos de red
+title: Tema 3. Protocolo IP (red)
 parent: Programación en red
 nav_order: 10
 ---
 
-# Tema 3. Protocolos de red
+# Tema 3. Protocolo IP (red)
 
-Contenido...
+**IP** (*Internet Protocol*, definido en el [RFC 791](https://www.rfc-editor.org/rfc/rfc791)) trabaja a nivel de red y proporciona un servicio de datagramas **sin conexión** y **no confiable**.
+
+- **Servicio de datagramas**: cada paquete se gestiona de forma independiente. Cada uno lleva su dirección de destino y la red lo encaminará como pueda.
+- **Sin conexión**: no se establece una sesión, es decir, no hay una conexión previa entre remitente y destinatario antes de empezar a intercambiar información.
+- **No confiable**: IP hace lo posible para que el paquete llegue bien, pero puede ocurrir que:
+  - no llegue nunca (se pierda o se elimine),
+  - llegue duplicado,
+  - llegue más tarde que otros paquetes enviados posteriormente por el mismo remitente al mismo destinatario (fuera de secuencia o retrasado).
+
+  Tampoco asegura la integridad de los datos, que pueden llegar corruptos. Lo que sí se verifica, mediante *checksum*, es la integridad de las cabeceras.
+
+## Estructura del paquete IP
+
+Cada paquete IP consta de un **encabezado** y un **contenido** (los datos que se quieren transmitir, enviados desde los protocolos superiores). El encabezado tiene varios campos (versión, longitud, checksum, tipo, flags, etc.), pero hay tres fundamentales:
+
+- **Dirección IP de origen**
+- **Dirección IP de destino**
+- **TTL** (*Time to Live*, tiempo de vida): número de saltos (enrutadores o *routers*) que se permite atravesar al paquete. Cada enrutador decrementa este valor en al menos 1 y, cuando llega a 0, descarta el paquete para evitar que circule indefinidamente por la red. Además de eliminarlo, envía mediante ICMP (*Internet Control Message Protocol*) un aviso de tipo *Tiempo excedido* a la dirección IP de origen.
