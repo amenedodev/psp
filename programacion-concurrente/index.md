@@ -5,5 +5,3 @@ has_children: true
 ---
 
 # Programación concurrente
-
-Introducción al bloque.
