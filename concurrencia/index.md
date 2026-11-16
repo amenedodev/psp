@@ -1,5 +1,5 @@
 ---
-title: Programación concurrente
+title: Concurrencia
 nav_order: 10
 has_children: true
 ---
