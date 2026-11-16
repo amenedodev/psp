@@ -1,10 +1,28 @@
 @media (min-width: 50rem) {
   .side-bar {
-    width: 264px;
+    width: 16.5rem !important;
+    align-items: flex-start !important;
   }
 
   .main {
-    margin-left: 264px;
-    max-width: none;
+    margin-left: 16.5rem !important;
+    max-width: none !important;
+  }
+}
+
+@media (min-width: 66.5rem) {
+  .side-bar {
+    width: 16.5rem !important;
+    align-items: flex-start !important;
+  }
+
+  .main {
+    margin-left: 16.5rem !important;
+    max-width: none !important;
+  }
+
+  .main-content-wrap {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
